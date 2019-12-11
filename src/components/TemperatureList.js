@@ -1,5 +1,5 @@
 import React from 'react';
-import * as d3 from 'd3';
+import d3 from '../d3-import';
 
 class TemperatureList extends React.Component {
   temperatureData = [8, 5, 13, 9, 12];
