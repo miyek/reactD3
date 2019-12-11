@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TemperatureList, BarChart, BarChart2, WorldMap } from '../components';
+import { TemperatureList, BarChart, BarChart2, WorldMap, Particles } from '../components';
 
 export class D3 extends React.Component {
   render() {
@@ -13,6 +13,8 @@ export class D3 extends React.Component {
       <BarChart2 data={[5,10,1,3]} size={[200,200]} />
       <h2>Wordmap</h2>
       <WorldMap/>
+      <h2>Particles</h2>
+      <Particles/>
     </div>
   }
 }

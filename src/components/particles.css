@@ -1,0 +1,15 @@
+.particles {
+  margin: 0;
+  background: #222;
+  min-width: 960px;
+}
+
+.particles rect {
+  fill: none;
+  pointer-events: all;
+}
+
+.particles circle {
+  fill: none;
+  stroke-width: 1px;
+}

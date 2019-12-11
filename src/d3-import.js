@@ -2,9 +2,11 @@ import { line, curve, curveCatmullRom } from "d3-shape";
 import { scaleTime, scaleLinear } from "d3-scale";
 import { axisBottom, axisLeft } from 'd3-axis';
 import { timeParse, isoFormat } from "d3-time-format";
-import { select } from 'd3-selection';
+import { select, mouse, event } from 'd3-selection';
 import { extent, max, min } from 'd3-array';
 import { geoMercator, geoPath } from 'd3-geo';
+import { hsl } from 'd3-color';
+import { transition } from 'd3-transition';
 
 export default {
   line: line,
@@ -19,5 +21,9 @@ export default {
   min: min,
   max: max,
   geoMercator: geoMercator,
-  geoPath: geoPath
+  geoPath: geoPath,
+  mouse: mouse,
+  event: event,
+  hsl: hsl,
+  transition: transition
 };

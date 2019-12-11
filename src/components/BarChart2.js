@@ -20,7 +20,6 @@ class BarChart2 extends React.Component {
 
   createBarChart() {
     const node = this.node;
-    console.log(node);
     const dataMax = d3.max(this.props.data);
     const yScale = d3.scaleLinear()
       .domain([0, dataMax])
